@@ -1,12 +1,11 @@
-import './App.css'
+import { BookMovieSeat } from "./Components/BookMovieSeat";
 
 function App() {
-
   return (
-    <>
-     <div></div>
-    </>
-  )
+    <section className="main-app-section">
+      <BookMovieSeat />
+    </section>
+  );
 }
 
-export default App
+export default App;
