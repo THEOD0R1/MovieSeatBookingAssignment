@@ -1,3 +1,4 @@
 {
-  "movies": [{}]
+  "movies": [{ "id": 1, "title": "Loading...", "price": 0 }],
+  "movieTheater": []
 }

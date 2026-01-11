@@ -1,4 +1,4 @@
-import { BookMovieSeat } from "./Components/BookMovieSeat";
+import { BookMovieSeat } from "./Components/BookMovie/BookMovieSeat";
 
 function App() {
   return (
