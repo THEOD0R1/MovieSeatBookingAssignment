@@ -1,9 +1,19 @@
+import Admin from "./Components/Admin/Admin";
 import { BookMovieSeat } from "./Components/BookMovie/BookMovieSeat";
+import { useState } from "react";
 
 function App() {
+  const [toggleAdmin, setToggleAdmin] = useState(false);
+
   return (
-    <section className="main-app-section">
-      <BookMovieSeat />
+    <section>
+      <button
+        className="toggle-admin"
+        onClick={() => setToggleAdmin(!toggleAdmin)}
+      >
+        {toggleAdmin ? "Switch to User View" : "Switch to Admin View"}
+      </button>
+      {toggleAdmin ? <Admin /> : <BookMovieSeat />}
     </section>
   );
 }

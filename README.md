@@ -1,5 +1,10 @@
 # Diary
 
+## 2026-01-12
+
+- Implement seat selection and auditorium model and styling.
+- Added admin page.
+
 ## 2026-01-11
 
 - Installed npm package json-server.

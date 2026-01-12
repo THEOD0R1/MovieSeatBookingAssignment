@@ -99,3 +99,20 @@ button {
   color: inherit;
   background-color: transparent;
 }
+.toggle-admin {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: var(--white-20);
+  border: 1px solid var(--white-80);
+  border-radius: 5px;
+  color: var(--white-primary);
+  font-size: 14px;
+  z-index: 1000;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+.toggle-admin:hover {
+  background-color: var(--white-80);
+  color: var(--black-primary);
+}
