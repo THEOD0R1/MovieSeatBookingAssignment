@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./BookMovieSeat.css";
 import MoviePicker from "./MoviePicker";
 import Seats from "./Seats";
-import { Auditorium } from "../../Models/Auditorium";
+import { Auditorium } from "../../../Models/Auditorium";
 
 export const BookMovieSeat = () => {
   const [selectedMovie, setSelectedMovie] = useState(null);
@@ -25,9 +25,7 @@ export const BookMovieSeat = () => {
 
   return (
     <section className="main-app-section">
-      <div className="movie-container">
-        <MoviePicker selectedMovie={setSelectedMovie} />
-      </div>
+      <MoviePicker selectedMovie={setSelectedMovie} />
       <ul className="showcase">
         <li>
           <div className="seat"></div>

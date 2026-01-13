@@ -116,3 +116,6 @@ button {
   background-color: var(--white-80);
   color: var(--black-primary);
 }
+.app-container {
+  width: 100%;
+}

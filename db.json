@@ -1,4 +1,20 @@
 {
-  "movies": [{ "id": 1, "title": "Loading...", "price": 0 }],
+  "movies": [
+    {
+      "id": "movie-mkcnnfsv0.3evygd56ud4",
+      "title": "New Spider Man ",
+      "price": "1"
+    },
+    {
+      "id": "movie-mkcnof7h0.si61e8gkyc",
+      "title": "New Spider Man 3",
+      "price": "3"
+    },
+    {
+      "id": "movie-mkcnuqyl0.zy1c58glg1",
+      "title": "new super car movie",
+      "price": "123"
+    }
+  ],
   "movieAuditorium": []
 }

@@ -1,0 +1,16 @@
+.btm-manage-movie {
+  background-color: #4a4a6a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+.btm-manage-movie:hover {
+  background-color: #6a6a8a;
+}
+.manage-list {
+  display: flex;
+  gap: 15px;
+}

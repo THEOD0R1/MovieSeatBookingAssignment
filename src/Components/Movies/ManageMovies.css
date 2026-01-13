@@ -1,0 +1,18 @@
+.manage-movies-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.btn-add-movie {
+  background-color: #8b5cf6;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.3s ease-out;
+}
+.btn-add-movie:hover {
+  background-color: #8a5cf5cc;
+}

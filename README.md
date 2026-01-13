@@ -1,5 +1,11 @@
 # Diary
 
+## 2026-01-13
+
+- Added show movies and add new movie feature in admin.
+- Validation for movie name and price.
+- Id generator.
+
 ## 2026-01-12
 
 - Implement seat selection and auditorium model and styling.

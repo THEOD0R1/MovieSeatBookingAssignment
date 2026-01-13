@@ -1,6 +1,16 @@
 import "./Admin.css";
+import { useState } from "react";
+import ManageMovies from "../Movies/ManageMovies";
+import ManageList from "./ManageList";
 const Admin = () => {
-  return <section className="admin-page">Admin</section>;
+  const [editMode, setEditMode] = useState("selectMode");
+  return (
+    <section className="admin-page">
+      {editMode === "selectMode" && <ManageList onButtonClick={setEditMode} />}
+
+      {editMode === "editMovie" && <ManageMovies />}
+    </section>
+  );
 };
 
 export default Admin;

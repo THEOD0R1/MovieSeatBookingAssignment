@@ -1,0 +1,8 @@
+.movie-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.error-message {
+  color: red;
+}
