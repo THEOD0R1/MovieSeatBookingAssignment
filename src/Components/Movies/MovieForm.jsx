@@ -6,9 +6,9 @@ import { isValidPrice } from "../../Validations/isValidPrice";
 
 const MovieForm = ({
   submitButtonContent,
-  btnClassName,
   title,
   handleMovieData,
+  handleCancel,
   startMovieValue = new Movie(null, "", ""),
 }) => {
   const [movie, setMovie] = useState(startMovieValue);
@@ -38,13 +38,14 @@ const MovieForm = ({
 
   return (
     <section>
-      <h3>{title}</h3>
+      <h3 className="movie-form-title">{title}</h3>
       <form onSubmit={onFormSubmit} className="movie-form">
         <label htmlFor="movie-title-form">
           Title*
           <span className="error-message">{errorMessage.title}</span>
         </label>
         <input
+          className="movie-form-input"
           value={movie.title}
           onChange={(e) => setMovie({ ...movie, title: e.target.value })}
           id="movie-title-form"
@@ -56,13 +57,23 @@ const MovieForm = ({
           <span className="error-message">{errorMessage.price}</span>
         </label>
         <input
+          className="movie-form-input"
           value={movie.price}
           onChange={(e) => setMovie({ ...movie, price: e.target.value })}
           id="movie-price-form"
           type="text"
           placeholder="170 (SEK)"
         />
-        <button className={btnClassName}>{submitButtonContent}</button>
+        <div className="movie-form-options">
+          <button className="movie-form-submit">{submitButtonContent}</button>
+          <button
+            type="button"
+            onClick={handleCancel}
+            className="movie-form-cancel"
+          >
+            Cancel
+          </button>
+        </div>
       </form>
     </section>
   );

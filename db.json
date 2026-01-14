@@ -2,18 +2,33 @@
   "movies": [
     {
       "id": "movie-mkcnnfsv0.3evygd56ud4",
-      "title": "New Spider Man ",
+      "title": "New Spider Man 1",
       "price": "1"
     },
     {
       "id": "movie-mkcnof7h0.si61e8gkyc",
-      "title": "New Spider Man 3",
-      "price": "3"
+      "title": "New Spider Man 4",
+      "price": "44"
     },
     {
       "id": "movie-mkcnuqyl0.zy1c58glg1",
       "title": "new super car movie",
       "price": "123"
+    },
+    {
+      "id": "movie-mkdqeb3p0.99za9h8uyz",
+      "title": "Vikings",
+      "price": "210"
+    },
+    {
+      "id": "movie-mkdqgfhv0.q2auc8ombaa",
+      "title": "Harry Potter",
+      "price": "14"
+    },
+    {
+      "id": "movie-mkdtdbag0.xjfxil49llo",
+      "title": "Not a test",
+      "price": "321"
     }
   ],
   "movieAuditorium": []

@@ -1,8 +1,47 @@
 .movie-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 .error-message {
   color: red;
+}
+.movie-form-title {
+  margin-bottom: 1rem;
+}
+.movie-form-options {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: end;
+}
+.movie-form-cancel {
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease-out;
+  text-decoration: underline;
+}
+.movie-form-cancel:hover {
+  opacity: 0.8;
+}
+
+.movie-form-submit {
+  background-color: #3e8627;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+.movie-form-submit:hover {
+  background-color: #336d1f;
+}
+.movie-form-input {
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }

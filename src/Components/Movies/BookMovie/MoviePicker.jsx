@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useFetchDataOnLoad } from "../../../Hooks/useFetchDataOnLoad";
-import { moviesApiUrl } from "../../../Variables,js";
+import { moviesApiUrl } from "../../../variables.js";
 
 const MoviePicker = ({ selectedMovie }) => {
   const [movies, setMovies] = useState([]);

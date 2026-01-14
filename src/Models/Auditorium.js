@@ -1,4 +1,4 @@
-import { auditoriumSeats } from "../Variables";
+import { auditoriumSeats } from "../variables";
 
 export class Auditorium {
   constructor(id, name) {

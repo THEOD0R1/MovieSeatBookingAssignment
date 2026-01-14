@@ -4,7 +4,10 @@ const ShowMovies = ({ movies, onMovieClick = () => {} }) => {
     <ul className="show-movie-list">
       {movies?.map((movie) => (
         <li key={"keyMovie" + movie.id}>
-          <button onClick={() => onMovieClick(movie)}>
+          <button
+            className="movie-item-btn"
+            onClick={() => onMovieClick(movie)}
+          >
             {movie?.title} ({movie?.price} kr)
           </button>
         </li>

@@ -3,6 +3,16 @@
   min-height: 100svh;
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  flex-direction: column;
+  padding: 0 2rem;
+  padding-top: 7rem;
+}
+
+@media (max-width: 768px) {
+  .admin-page {
+    padding: 0 1rem;
+    padding-top: 5rem;
+  }
 }

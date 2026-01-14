@@ -1,5 +1,10 @@
 # Diary
 
+## 2026-01-14
+
+- Added some basic styling for the admin section.
+- Implemented Edit function in Admin manage movies.
+
 ## 2026-01-13
 
 - Added show movies and add new movie feature in admin.

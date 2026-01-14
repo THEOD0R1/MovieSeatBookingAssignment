@@ -1,3 +1,6 @@
+export const moviesApiUrl = `${import.meta.env.VITE_API_URL}/movies`;
+export const modeViewMovies = "viewMovies";
+export const modeEditMovie = "editMovie";
 export const auditoriumSeats = [
   { id: 1, number: "1A", occupied: false },
   { id: 2, number: "1B", occupied: false },

@@ -1,1 +1,0 @@
-export const moviesApiUrl = `${import.meta.env.VITE_API_URL}/movies`;

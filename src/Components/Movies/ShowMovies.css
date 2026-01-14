@@ -1,4 +1,29 @@
 .show-movie-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
+}
+.movie-item-btn {
+  background-color: #8684aa;
+  padding: 0.5rem 1rem;
+  color: white;
+  margin: 0.25rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-transform: capitalize;
+  transition: background-color 0.3s ease-out, color 0.3s ease,
+    scale 0.1s ease-out;
+}
+.movie-item-btn:hover {
+  background-color: #6f6c9a;
+  scale: 1.01;
+}
+@media (max-width: 768px) {
+  .show-movie-list {
+    justify-content: center;
+  }
+  .movie-item-btn {
+    font-size: 1rem;
+    width: 250px;
+  }
 }
