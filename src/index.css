@@ -33,6 +33,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   min-width: 320px;
+  height: 100%;
 
   /* Standard colors */
   background-color: var(--black-primary);
@@ -111,7 +112,9 @@ button {
   color: var(--white-primary);
   font-size: 1rem;
   z-index: 1000;
-  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+  transition:
+    background-color 0.3s ease-out,
+    color 0.3s ease-out;
 }
 .toggle-admin:hover {
   background-color: var(--white-80);

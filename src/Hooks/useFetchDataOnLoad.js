@@ -2,12 +2,17 @@ import { useEffect } from "react";
 
 export const useFetchDataOnLoad = (apiUrl, handleData, deps = []) => {
   useEffect(() => {
+    if (!apiUrl || !handleData || apiUrl.trim() === "") return;
     let ignore = false;
 
     async function getData() {
       try {
         if (ignore) return;
         const response = await fetch(apiUrl);
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
         const data = await response.json();
         handleData(data);
       } catch (error) {

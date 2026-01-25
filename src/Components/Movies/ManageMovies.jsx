@@ -1,30 +1,35 @@
 import { useState } from "react";
 import { useFetchDataOnLoad } from "../../Hooks/useFetchDataOnLoad";
-import ShowMovies from "./ShowMovies";
 import "./ManageMovies.css";
 import MovieForm from "./MovieForm";
 import { Movie } from "../../Models/Movie";
 import { idGenerator } from "../Generators/idGenerator";
 import {
+  adminModeSelect,
   modeEditMovie,
   modeViewMovies,
   moviesApiUrl,
 } from "../../variables.js";
+import DataTable from "../Admin/DataTable.jsx";
+import { fetchDelete } from "../../Functions/Fetch/fetchDelete.js";
+import { fetchPatch } from "../../Functions/Fetch/fetchPatch.js";
+import { fetchPost } from "../../Functions/Fetch/fetchPost.js";
 
-const ManageMovies = () => {
+const ManageMovies = ({ onButtonClick }) => {
   const [movies, setMovies] = useState([]);
+  const [deletedMovieId, setDeletedMovieId] = useState(null);
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [selectMode, setSelectMode] = useState(modeViewMovies);
 
-  useFetchDataOnLoad(moviesApiUrl, (data) => setMovies(data), [selectMode]);
+  useFetchDataOnLoad(moviesApiUrl, (data) => setMovies(data), [
+    selectMode,
+    deletedMovieId,
+  ]);
 
   const handleNewMovie = async (newMovie) => {
     const id = idGenerator("movie-");
     const movie = new Movie(id, newMovie.title, newMovie.price);
-    await fetch(moviesApiUrl, {
-      method: "POST",
-      body: JSON.stringify(movie),
-    });
+    await fetchPost(moviesApiUrl, movie);
     setSelectMode(modeViewMovies);
   };
 
@@ -34,20 +39,31 @@ const ManageMovies = () => {
   };
 
   const handleEditMovie = async (updatedMovie) => {
-    await fetch(`${moviesApiUrl}/${updatedMovie.id}`, {
-      method: "PATCH",
-      body: JSON.stringify({
-        title: updatedMovie.title,
-        price: updatedMovie.price,
-      }),
+    await fetchPatch(`${moviesApiUrl}/${updatedMovie.id}`, {
+      title: updatedMovie.title,
+      price: updatedMovie.price,
     });
     setSelectMode(modeViewMovies);
+  };
+
+  const handleDeleteMovie = async (id) => {
+    const response = await fetchDelete(`${moviesApiUrl}/${id}`);
+
+    if (response.ok) setDeletedMovieId(id);
   };
 
   return (
     <section className="manage-movies-container">
       <header className="manage-movies-header">
-        <h2 className="manage-movie-title">Manage Movies</h2>
+        <h2 className="manage-movie-title">
+          <button
+            onClick={() => onButtonClick(adminModeSelect)}
+            className="go-to-manage"
+          >
+            Manage
+          </button>
+          Movies
+        </h2>
         {selectMode === modeViewMovies && (
           <button
             onClick={() => setSelectMode("addNewMovie")}
@@ -59,7 +75,11 @@ const ManageMovies = () => {
       </header>
       {selectMode === modeViewMovies && (
         <section className="show-movie-container">
-          <ShowMovies movies={movies} onMovieClick={handleMovieClick} />
+          <DataTable
+            data={movies}
+            onEdit={handleMovieClick}
+            onDelete={handleDeleteMovie}
+          />
         </section>
       )}
       {selectMode === "addNewMovie" && (

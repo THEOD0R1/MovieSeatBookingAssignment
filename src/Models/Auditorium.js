@@ -1,9 +1,7 @@
-import { auditoriumSeats } from "../variables";
-
 export class Auditorium {
-  constructor(id, name) {
+  constructor(id, title, schedules = []) {
     this.id = id;
-    this.name = name;
-    this.seats = auditoriumSeats;
+    this.title = title;
+    this.schedules = schedules;
   }
 }

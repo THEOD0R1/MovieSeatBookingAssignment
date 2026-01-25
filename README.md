@@ -1,5 +1,17 @@
 # Diary
 
+## 2026-01-25
+
+- Enhance movie and auditorium management features.
+- Updated db.json to include new auditorium structure and multiple movies with varied prices.
+- Modified Admin component to support managing auditoriums and schedules.
+- Added ManageAuditorium and ManageSchedule components for better organization.
+- Introduced DataTable component for displaying and managing movies and auditoriums.
+- Implemented AuditoriumForm for adding and editing auditoriums.
+- Enhanced BookMovieSeat component to handle seat selection and pricing.
+- Refactored fetch functions for cleaner API interactions.
+- Added Schedule and its view components for managing movie schedules.
+
 ## 2026-01-14
 
 - Added some basic styling for the admin section.

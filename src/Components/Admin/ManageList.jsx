@@ -8,7 +8,23 @@ const ManageList = ({ onButtonClick }) => {
           className="btm-manage-movie"
           onClick={() => onButtonClick("editMovie")}
         >
-          Manage Movies
+          Movies
+        </button>
+      </li>
+      <li>
+        <button
+          className="btm-manage-movie"
+          onClick={() => onButtonClick("editAuditorium")}
+        >
+          Auditoriums
+        </button>
+      </li>
+      <li>
+        <button
+          className="btm-manage-movie"
+          onClick={() => onButtonClick("editSchedule")}
+        >
+          Schedule
         </button>
       </li>
     </ul>

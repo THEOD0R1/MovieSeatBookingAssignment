@@ -2,14 +2,13 @@ import { useState } from "react";
 import "./BookMovieSeat.css";
 import MoviePicker from "./MoviePicker";
 import Seats from "./Seats";
-import { Auditorium } from "../../../Models/Auditorium";
+import { auditoriumSeats } from "../../../variables";
 
 export const BookMovieSeat = () => {
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [selectedSeats, setSelectedSeats] = useState([]);
 
-  console.log(selectedMovie);
-  const seats = new Auditorium(1, "Main Auditorium").seats;
+  const seats = auditoriumSeats;
 
   const handleSeatChange = (seatId, isOccupied) => {
     if (isOccupied) {
@@ -46,7 +45,10 @@ export const BookMovieSeat = () => {
       </div>
       <p className="text">
         You have selected <span id="count">{selectedSeats.length}</span> seats
-        for a price of $<span id="total">{0}</span>
+        for a price of SEK{" "}
+        <span id="total">
+          {(selectedMovie?.price * selectedSeats.length).toString()}
+        </span>
       </p>
     </section>
   );

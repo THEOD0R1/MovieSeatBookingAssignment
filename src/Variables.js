@@ -1,6 +1,15 @@
 export const moviesApiUrl = `${import.meta.env.VITE_API_URL}/movies`;
+export const auditoriumsApiUrl = `${import.meta.env.VITE_API_URL}/auditoriums`;
+//Admin modes
+export const adminModeSelect = "selectMode";
+//Movie management modes
 export const modeViewMovies = "viewMovies";
 export const modeEditMovie = "editMovie";
+//Auditorium management modes
+export const modeViewAuditoriums = "viewAuditoriums";
+export const modeEditAuditorium = "editAuditorium";
+export const modeAddNewAuditorium = "addNewAuditorium";
+
 export const auditoriumSeats = [
   { id: 1, number: "1A", occupied: false },
   { id: 2, number: "1B", occupied: false },

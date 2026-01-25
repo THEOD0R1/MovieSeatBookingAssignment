@@ -1,6 +1,7 @@
 .admin-page {
   background-color: #242333;
   min-height: 100svh;
+  height: 100%;
   display: flex;
   width: 100%;
   justify-content: start;

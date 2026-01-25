@@ -7,7 +7,7 @@ const MoviePicker = ({ selectedMovie }) => {
 
   useFetchDataOnLoad(moviesApiUrl, (data) => {
     setMovies(data);
-    selectedMovie(data[0].id);
+    selectedMovie(data[0]);
   });
 
   return (
@@ -15,12 +15,12 @@ const MoviePicker = ({ selectedMovie }) => {
       <label htmlFor="movie">Pick a movie:</label>
       {movies?.length > 0 && (
         <select
-          onChange={(e) => selectedMovie(e.target.value)}
+          onChange={(e) => selectedMovie(movies[e.target.value])}
           name="movie"
           id="movie"
         >
-          {movies?.map((movie) => (
-            <option key={"keyMovie" + movie.id} value={movie.id}>
+          {movies?.map((movie, i) => (
+            <option key={"keyMovie" + movie.id} value={i}>
               {movie?.title} ({movie?.price} kr)
             </option>
           ))}

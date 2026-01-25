@@ -7,17 +7,23 @@
   gap: 20px;
 }
 .btn-add-movie {
-  background-color: #8b5cf6;
+  background-color: #43346e;
   color: rgb(255, 255, 255);
   border: none;
-  padding: 0.25rem 0.5rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 0.25rem;
   cursor: pointer;
   width: fit-content;
   transition: background-color 0.3s ease-out;
 }
+.go-to-manage {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  margin-right: 1rem;
+  transition: opacity 0.3s ease-out;
+}
 .btn-add-movie:hover {
-  background-color: #8a5cf5cc;
+  background-color: #43346ecc;
 }
 .manage-movies-header {
   display: flex;
@@ -39,5 +45,13 @@
   .btn-add-movie {
     padding: 0.2rem 0.4rem;
     font-size: 1rem;
+  }
+  .go-to-manage {
+    margin-right: 0.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .go-to-manage:hover {
+    opacity: 0.7;
   }
 }

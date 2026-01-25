@@ -1,7 +1,7 @@
 import Seat from "./Seat";
 import "./Seats.css";
 
-const Seats = ({ seats = [], onSeatChange }) => {
+const Seats = ({ seats = [], onSeatChange, isAdmin = false }) => {
   return (
     <div className="theater">
       {seats.map((seat, index) => (
@@ -10,6 +10,7 @@ const Seats = ({ seats = [], onSeatChange }) => {
           seat={seat}
           index={index}
           onSeatChange={onSeatChange}
+          isAdmin={isAdmin}
         />
       ))}
     </div>
