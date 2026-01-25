@@ -37,7 +37,7 @@ const MovieForm = ({
   };
 
   return (
-    <section>
+    <section className="movie-form-container">
       <h3 className="movie-form-title">{title}</h3>
       <form onSubmit={onFormSubmit} className="movie-form">
         <label htmlFor="movie-title-form">

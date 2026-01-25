@@ -35,8 +35,11 @@ const ManageMovies = () => {
 
   const handleEditMovie = async (updatedMovie) => {
     await fetch(`${moviesApiUrl}/${updatedMovie.id}`, {
-      method: "PUT",
-      body: JSON.stringify(updatedMovie),
+      method: "PATCH",
+      body: JSON.stringify({
+        title: updatedMovie.title,
+        price: updatedMovie.price,
+      }),
     });
     setSelectMode(modeViewMovies);
   };

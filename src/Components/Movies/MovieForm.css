@@ -1,6 +1,15 @@
+.movie-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
 .movie-form {
   display: flex;
   flex-direction: column;
+  min-width: 350px;
 }
 .error-message {
   color: red;
@@ -44,4 +53,12 @@
   margin-top: 0.25rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .movie-form {
+    min-width: 280px;
+    width: 100%;
+    max-width: 350px;
+  }
 }

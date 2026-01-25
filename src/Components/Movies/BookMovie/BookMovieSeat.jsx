@@ -7,19 +7,19 @@ import { Auditorium } from "../../../Models/Auditorium";
 export const BookMovieSeat = () => {
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [selectedSeats, setSelectedSeats] = useState([]);
+
   console.log(selectedMovie);
   const seats = new Auditorium(1, "Main Auditorium").seats;
 
   const handleSeatChange = (seatId, isOccupied) => {
-    const existingSeat = selectedSeats.find((seat) => seat.seatId === seatId);
-    if (existingSeat) {
-      setSelectedSeats(
-        selectedSeats.map((seat) =>
-          seat.seatId === seatId ? { ...seat, isOccupied } : seat
-        )
-      );
+    if (isOccupied) {
+      setSelectedSeats([
+        ...selectedSeats,
+        { id: seatId, isOccupied: isOccupied },
+      ]);
     } else {
-      setSelectedSeats([...selectedSeats, { seatId, isOccupied }]);
+      const filteredList = selectedSeats.filter((seat) => seat.id !== seatId);
+      setSelectedSeats(filteredList);
     }
   };
 
@@ -45,8 +45,8 @@ export const BookMovieSeat = () => {
         <Seats seats={seats} onSeatChange={handleSeatChange} />
       </div>
       <p className="text">
-        You have selected <span id="count">0</span> seats for a price of $
-        <span id="total">0</span>
+        You have selected <span id="count">{selectedSeats.length}</span> seats
+        for a price of $<span id="total">{0}</span>
       </p>
     </section>
   );
