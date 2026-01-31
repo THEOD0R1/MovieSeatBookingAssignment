@@ -1,6 +1,4 @@
 .schedule-view-container {
-  min-height: 70svh;
-  height: 100%;
   overflow-x: auto;
 }
 .schedule-view-header {
@@ -17,38 +15,31 @@
   min-width: 7rem;
 }
 .schedule-view-body-row {
-  border: solid green 1px;
+  border: solid rgba(255, 255, 255, 0.4) 1px;
   display: grid;
   min-width: 3rem;
-  grid-row: 1 / 48;
+  grid-row: 1 / 90;
 }
 .schedule-view-body-schedule {
-  border: solid green 1px;
+  border: solid rgba(255, 255, 255, 0.4) 1px;
   min-width: 7rem;
-  grid-row: 1 / 48;
+  grid-row: 1 / 90;
 }
 .schedule-view-body {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 10px 72px;
   display: grid;
-  gap: 1rem;
   grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
-  grid-template-rows: repeat(48, auto);
+  grid-template-rows: repeat(90, minmax(0.75rem, auto));
   text-align: center;
   width: 100%;
-  height: 100%;
   margin-bottom: 1.7rem;
 }
-.schedule-view-item {
-  grid-row: 10 / 48;
-  grid-column-start: 2;
-  border: solid green 2px;
-  min-width: 6.5rem;
-}
 
-.schedule-view-table {
-  width: 100%;
-  font-size: 1.2rem;
-  border: red solid 2px;
-}
 .schedule-view-thead-row {
   display: flex;
   gap: 1rem;

@@ -28,7 +28,12 @@ const ManageMovies = ({ onButtonClick }) => {
 
   const handleNewMovie = async (newMovie) => {
     const id = idGenerator("movie-");
-    const movie = new Movie(id, newMovie.title, newMovie.price);
+    const movie = new Movie(
+      id,
+      newMovie.title,
+      newMovie.price,
+      newMovie.movieLength,
+    );
     await fetchPost(moviesApiUrl, movie);
     setSelectMode(modeViewMovies);
   };
@@ -42,6 +47,7 @@ const ManageMovies = ({ onButtonClick }) => {
     await fetchPatch(`${moviesApiUrl}/${updatedMovie.id}`, {
       title: updatedMovie.title,
       price: updatedMovie.price,
+      movieLength: updatedMovie.movieLength,
     });
     setSelectMode(modeViewMovies);
   };

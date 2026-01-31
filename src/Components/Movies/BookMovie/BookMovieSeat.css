@@ -85,6 +85,17 @@ p.text span {
   color: #6feaf6;
 }
 
+.book-btn {
+  padding: 0.25rem 0.5rem;
+  background-color: white;
+  color: #242333;
+  border-radius: 5px;
+  margin: 1rem;
+  transition: background-color 0.3s ease-out;
+}
+.book-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 @media (max-width: 768px) {
   .main-app-section {
     padding: 1rem;

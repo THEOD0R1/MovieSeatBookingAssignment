@@ -1,5 +1,17 @@
 # Diary
 
+## 2026-01-29 - 2026-01-31
+
+- Removed unused seat handling logic from AuditoriumForm.
+- Enhanced BookMovieSeat to include a the start of a booking form and manage selected mode.
+- Added movie length field in MovieForm and updated related validations.
+- Implemented new schedule management features in ManageSchedule, including dropdowns for selecting movies and auditoriums.
+- Created reusable Dropdown and DropdownSearch components for better UI interaction.
+- Introduced new ScheduleTime component for displaying schedule times.
+- Added validation for date and time inputs in AddNewSchedule.
+- Created BookingData model for handling booking information.
+- Implemented utility functions for date formatting and schedule grid positioning.
+
 ## 2026-01-25
 
 - Enhance movie and auditorium management features.

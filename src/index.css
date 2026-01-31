@@ -29,14 +29,18 @@
     scroll-behavior: smooth;
   }
 }
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   min-width: 320px;
   height: 100%;
-
-  /* Standard colors */
-  background-color: var(--black-primary);
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* Standard colors*/
+  background-color: black;
   color: var(--white-primary);
 
   /* Font */

@@ -1,7 +1,11 @@
+import { getScheduleGridPosition } from "../../Functions/getScheduleGridPosition ";
+import { weekToGridKeys } from "../../variables";
+import ScheduleTime from "./ScheduleTime";
 import "./ScheduleView.css";
-const ScheduleView = () => {
-  const timeArr = [...Array(16).keys()];
+const ScheduleView = ({ schedule }) => {
+  if (schedule?.length === 0) return;
 
+  const timeArr = [...Array(15).keys()];
   return (
     <section className="schedule-view-container">
       <section className="schedule-view-header">
@@ -15,24 +19,29 @@ const ScheduleView = () => {
         <h3 className="schedule-view-header-day">Sunday</h3>
       </section>
       <section className="schedule-view-body">
-        {/* <div className="schedule-view-item"></div> */}
-        <div className="schedule-view-body-row">
-          {timeArr?.map((_, i) => (
-            <span
-              key={`schedule-time-${i}`}
-              className="schedule-view-body-time"
+        <ScheduleTime timeArr={timeArr} />
+
+        {schedule?.map((event, i) => {
+          const startValue = getScheduleGridPosition(new Date(event.startTime));
+          const endValue = getScheduleGridPosition(new Date(event.endTime));
+
+          const gridValue = `${startValue.gridRow} / ${endValue.gridRow}`;
+
+          return (
+            <div
+              key={"schedule-" + event.id + i}
+              style={{
+                backgroundColor: "green",
+                gridColumn: weekToGridKeys[+startValue.day].toString(),
+                gridRow: gridValue,
+              }}
             >
-              {12 + i <= 23 ? 12 + i : `0${i - 12}`}:00
-            </span>
-          ))}
-        </div>
-        <div className="schedule-view-body-schedule"></div>
-        <div className="schedule-view-body-schedule"></div>
-        <div className="schedule-view-body-schedule"></div>
-        <div className="schedule-view-body-schedule"></div>
-        <div className="schedule-view-body-schedule"></div>
-        <div className="schedule-view-body-schedule"></div>
-        <div className="schedule-view-body-schedule"></div>
+              {event.startTime}
+              <br></br>
+              {event.endTime}
+            </div>
+          );
+        })}
       </section>
     </section>
   );

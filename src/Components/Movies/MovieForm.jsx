@@ -9,20 +9,26 @@ const MovieForm = ({
   title,
   handleMovieData,
   handleCancel,
-  startMovieValue = new Movie(null, "", ""),
+  startMovieValue = new Movie(null, "", "", ""),
 }) => {
   const [movie, setMovie] = useState(startMovieValue);
-  const [errorMessage, setErrorMessage] = useState({ title: "", price: "" });
+  const [errorMessage, setErrorMessage] = useState({
+    title: "",
+    price: "",
+    movieLength: "",
+  });
 
   const onFormSubmit = async (e) => {
     e.preventDefault();
     let error = {
       title: "",
       price: "",
+      movieLength: "",
     };
 
-    const validName = isValidMovieName(movie.title);
-    const validPrice = isValidPrice(+movie.price.trim());
+    const validName = isValidMovieName(movie?.title);
+    const validPrice = isValidPrice(+movie?.price?.trim());
+    const validMovieLength = isValidPrice(+movie?.movieLength?.trim());
 
     if (!validName) error.title = " In valid title";
     else error.title = "";
@@ -30,9 +36,11 @@ const MovieForm = ({
     if (!validPrice) error.price = " In valid price";
     else error.price = "";
 
-    setErrorMessage(error);
+    if (!validMovieLength) error.movieLength = " In valid movie length";
+    else error.movieLength = "";
 
-    if (!validName || !validPrice) return;
+    setErrorMessage(error);
+    if (!validName || !validPrice || !validMovieLength) return;
     await handleMovieData(movie);
   };
 
@@ -53,7 +61,19 @@ const MovieForm = ({
           placeholder="Batman Begins"
         />
         <label htmlFor="movie-price-form">
-          Price*
+          Length (min)*
+          <span className="error-message">{errorMessage.movieLength}</span>
+        </label>
+        <input
+          className="movie-form-input"
+          value={movie.movieLength}
+          onChange={(e) => setMovie({ ...movie, movieLength: e.target.value })}
+          id="movie-price-form"
+          type="text"
+          placeholder="120"
+        />
+        <label htmlFor="movie-price-form">
+          Price (SEK)*
           <span className="error-message">{errorMessage.price}</span>
         </label>
         <input
@@ -62,7 +82,7 @@ const MovieForm = ({
           onChange={(e) => setMovie({ ...movie, price: e.target.value })}
           id="movie-price-form"
           type="text"
-          placeholder="170 (SEK)"
+          placeholder="170"
         />
         <div className="movie-form-options">
           <button className="movie-form-submit">{submitButtonContent}</button>

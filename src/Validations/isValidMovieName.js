@@ -1,3 +1,4 @@
 export function isValidMovieName(name) {
-  return /^[a-zA-Z0-9 :' -]+$/.test(name.trim());
+  if (!name) return false;
+  return /^[a-zA-Z0-9 :' -]+$/.test(name?.trim());
 }

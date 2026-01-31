@@ -9,6 +9,12 @@ export const modeEditMovie = "editMovie";
 export const modeViewAuditoriums = "viewAuditoriums";
 export const modeEditAuditorium = "editAuditorium";
 export const modeAddNewAuditorium = "addNewAuditorium";
+//Schedule manage modes
+export const modeViewSchedule = "viewSchedule";
+export const modeAddNewSchedule = "addNewSchedule";
+export const modeManageSchedule = "manageSchedule";
+
+export const weekToGridKeys = { 0: 8, 1: 2, 2: 3, 3: 4, 4: 5, 5: 6, 6: 7 };
 
 export const auditoriumSeats = [
   { id: 1, number: "1A", occupied: false },

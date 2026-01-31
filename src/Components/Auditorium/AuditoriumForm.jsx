@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Auditorium } from "../../Models/Auditorium";
 import { isValidMovieName } from "../../Validations/isValidMovieName";
-import Seats from "../Movies/BookMovie/Seats";
 
 const AuditoriumForm = ({
   submitButtonContent,
@@ -12,15 +11,6 @@ const AuditoriumForm = ({
 }) => {
   const [auditorium, setAuditorium] = useState(startAuditoriumValue);
   const [errorMessage, setErrorMessage] = useState("");
-
-  //   const handleSeatChange = (seatId, occupied) => {
-  //     auditorium.seats = auditorium.seats.map((seat) => {
-  //       if (seat.id === seatId) {
-  //         return { ...seat, occupied: occupied };
-  //       }
-  //       return seat;
-  //     });
-  //   };
 
   const onFormSubmit = async (e) => {
     e.preventDefault();
@@ -55,14 +45,7 @@ const AuditoriumForm = ({
           type="text"
           placeholder="Theater 1"
         />
-        {/* <div className="container">
-          <div className="screen"></div>
-          <Seats
-            isAdmin={true}
-            seats={startAuditoriumValue.seats}
-            onSeatChange={handleSeatChange}
-          />
-        </div> */}
+
         <div className="movie-form-options">
           <button className="movie-form-submit">{submitButtonContent}</button>
           <button

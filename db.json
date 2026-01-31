@@ -1,237 +1,2550 @@
 {
   "movies": [
     {
-      "id": "movie-mkcnof7h0.si61e8gkyc",
-      "title": "New Spider Man 1",
-      "price": "332"
-    },
-    {
       "id": "movie-mktynx3w0.jt7l5vntwrh",
       "title": "Vikings",
-      "price": "123"
+      "price": "123",
+      "movieLength": "22"
     },
     {
-      "id": "movie-mktyxbp10.tlv6hmm43q",
-      "title": "New Spider Man 2",
-      "price": "33"
+      "id": "movie-mkz762u40.y9vumky4png",
+      "title": "Star Wars: The Clone Wars",
+      "price": "199",
+      "movieLength": "33"
     },
     {
-      "id": "movie-mktzgg000.lakrmhzsgxe",
-      "title": "New Spider Man 1",
-      "price": "2"
+      "id": "movie-mkza4dug0.xmyolbzfqjs",
+      "title": "New Spider Man 3",
+      "price": "324",
+      "movieLength": "90"
+    },
+    {
+      "id": "movie-mkza4kjq0.deqoxuu83mc",
+      "title": "Batman",
+      "price": "222",
+      "movieLength": "33"
+    },
+    {
+      "id": "movie-mkza4vdx0.4razb46ms26",
+      "title": "Avatar",
+      "price": "229",
+      "movieLength": "80"
+    },
+    {
+      "id": "movie-mkzc4vkz0.k9bp6nvvmxo",
+      "title": "Superman",
+      "price": "180",
+      "movieLength": "123"
     }
   ],
   "auditoriums": [
     {
-      "id": "auditorium-mku1vcu00.wambiz0doja",
-      "title": "Theater 2",
-      "seats": [
+      "id": "auditorium-mku7fmdh0.okjb3dkedgb",
+      "title": "Theater 1",
+      "schedules": [
         {
-          "id": 1,
-          "number": "1A",
-          "occupied": false
+          "id": "schedule-mkzhrjic0.4hnf9a1sar8",
+          "movie": "movie-mkzc4vkz0.k9bp6nvvmxo",
+          "startTime": "2026-01-30T15:30",
+          "endTime": "2026-01-30T17:10",
+          "seats": [
+            {
+              "id": 1,
+              "number": "1A",
+              "occupied": false
+            },
+            {
+              "id": 2,
+              "number": "1B",
+              "occupied": false
+            },
+            {
+              "id": 3,
+              "number": "1C",
+              "occupied": false
+            },
+            {
+              "id": 4,
+              "number": "1D",
+              "occupied": false
+            },
+            {
+              "id": 5,
+              "number": "1E",
+              "occupied": false
+            },
+            {
+              "id": 6,
+              "number": "1F",
+              "occupied": false
+            },
+            {
+              "id": 7,
+              "number": "1G",
+              "occupied": false
+            },
+            {
+              "id": 8,
+              "number": "1H",
+              "occupied": false
+            },
+            {
+              "id": 9,
+              "number": "2A",
+              "occupied": false
+            },
+            {
+              "id": 10,
+              "number": "2B",
+              "occupied": false
+            },
+            {
+              "id": 11,
+              "number": "2C",
+              "occupied": false
+            },
+            {
+              "id": 12,
+              "number": "2D",
+              "occupied": false
+            },
+            {
+              "id": 13,
+              "number": "2E",
+              "occupied": false
+            },
+            {
+              "id": 14,
+              "number": "2F",
+              "occupied": false
+            },
+            {
+              "id": 15,
+              "number": "2G",
+              "occupied": false
+            },
+            {
+              "id": 16,
+              "number": "2H",
+              "occupied": false
+            },
+            {
+              "id": 17,
+              "number": "3A",
+              "occupied": false
+            },
+            {
+              "id": 18,
+              "number": "3B",
+              "occupied": false
+            },
+            {
+              "id": 19,
+              "number": "3C",
+              "occupied": false
+            },
+            {
+              "id": 20,
+              "number": "3D",
+              "occupied": false
+            },
+            {
+              "id": 21,
+              "number": "3E",
+              "occupied": false
+            },
+            {
+              "id": 22,
+              "number": "3F",
+              "occupied": false
+            },
+            {
+              "id": 23,
+              "number": "3G",
+              "occupied": false
+            },
+            {
+              "id": 24,
+              "number": "3H",
+              "occupied": false
+            },
+            {
+              "id": 25,
+              "number": "4A",
+              "occupied": false
+            },
+            {
+              "id": 26,
+              "number": "4B",
+              "occupied": false
+            },
+            {
+              "id": 27,
+              "number": "4C",
+              "occupied": false
+            },
+            {
+              "id": 28,
+              "number": "4D",
+              "occupied": false
+            },
+            {
+              "id": 29,
+              "number": "4E",
+              "occupied": false
+            },
+            {
+              "id": 30,
+              "number": "4F",
+              "occupied": false
+            },
+            {
+              "id": 31,
+              "number": "4G",
+              "occupied": false
+            },
+            {
+              "id": 32,
+              "number": "4H",
+              "occupied": false
+            },
+            {
+              "id": 33,
+              "number": "5A",
+              "occupied": false
+            },
+            {
+              "id": 34,
+              "number": "5B",
+              "occupied": false
+            },
+            {
+              "id": 35,
+              "number": "5C",
+              "occupied": false
+            },
+            {
+              "id": 36,
+              "number": "5D",
+              "occupied": false
+            },
+            {
+              "id": 37,
+              "number": "5E",
+              "occupied": false
+            },
+            {
+              "id": 38,
+              "number": "5F",
+              "occupied": false
+            },
+            {
+              "id": 39,
+              "number": "5G",
+              "occupied": false
+            },
+            {
+              "id": 40,
+              "number": "5H",
+              "occupied": false
+            }
+          ]
         },
         {
-          "id": 2,
-          "number": "1B",
-          "occupied": false
+          "id": "schedule-mkzl90pm0.m1blafs755k",
+          "movieId": "movie-mkza4vdx0.4razb46ms26",
+          "startTime": "2026-01-29T12:07",
+          "endTime": "2026-01-29T13:47",
+          "seats": [
+            {
+              "id": 1,
+              "number": "1A",
+              "occupied": false
+            },
+            {
+              "id": 2,
+              "number": "1B",
+              "occupied": false
+            },
+            {
+              "id": 3,
+              "number": "1C",
+              "occupied": false
+            },
+            {
+              "id": 4,
+              "number": "1D",
+              "occupied": false
+            },
+            {
+              "id": 5,
+              "number": "1E",
+              "occupied": false
+            },
+            {
+              "id": 6,
+              "number": "1F",
+              "occupied": false
+            },
+            {
+              "id": 7,
+              "number": "1G",
+              "occupied": false
+            },
+            {
+              "id": 8,
+              "number": "1H",
+              "occupied": false
+            },
+            {
+              "id": 9,
+              "number": "2A",
+              "occupied": false
+            },
+            {
+              "id": 10,
+              "number": "2B",
+              "occupied": false
+            },
+            {
+              "id": 11,
+              "number": "2C",
+              "occupied": false
+            },
+            {
+              "id": 12,
+              "number": "2D",
+              "occupied": false
+            },
+            {
+              "id": 13,
+              "number": "2E",
+              "occupied": false
+            },
+            {
+              "id": 14,
+              "number": "2F",
+              "occupied": false
+            },
+            {
+              "id": 15,
+              "number": "2G",
+              "occupied": false
+            },
+            {
+              "id": 16,
+              "number": "2H",
+              "occupied": false
+            },
+            {
+              "id": 17,
+              "number": "3A",
+              "occupied": false
+            },
+            {
+              "id": 18,
+              "number": "3B",
+              "occupied": false
+            },
+            {
+              "id": 19,
+              "number": "3C",
+              "occupied": false
+            },
+            {
+              "id": 20,
+              "number": "3D",
+              "occupied": false
+            },
+            {
+              "id": 21,
+              "number": "3E",
+              "occupied": false
+            },
+            {
+              "id": 22,
+              "number": "3F",
+              "occupied": false
+            },
+            {
+              "id": 23,
+              "number": "3G",
+              "occupied": false
+            },
+            {
+              "id": 24,
+              "number": "3H",
+              "occupied": false
+            },
+            {
+              "id": 25,
+              "number": "4A",
+              "occupied": false
+            },
+            {
+              "id": 26,
+              "number": "4B",
+              "occupied": false
+            },
+            {
+              "id": 27,
+              "number": "4C",
+              "occupied": false
+            },
+            {
+              "id": 28,
+              "number": "4D",
+              "occupied": false
+            },
+            {
+              "id": 29,
+              "number": "4E",
+              "occupied": false
+            },
+            {
+              "id": 30,
+              "number": "4F",
+              "occupied": false
+            },
+            {
+              "id": 31,
+              "number": "4G",
+              "occupied": false
+            },
+            {
+              "id": 32,
+              "number": "4H",
+              "occupied": false
+            },
+            {
+              "id": 33,
+              "number": "5A",
+              "occupied": false
+            },
+            {
+              "id": 34,
+              "number": "5B",
+              "occupied": false
+            },
+            {
+              "id": 35,
+              "number": "5C",
+              "occupied": false
+            },
+            {
+              "id": 36,
+              "number": "5D",
+              "occupied": false
+            },
+            {
+              "id": 37,
+              "number": "5E",
+              "occupied": false
+            },
+            {
+              "id": 38,
+              "number": "5F",
+              "occupied": false
+            },
+            {
+              "id": 39,
+              "number": "5G",
+              "occupied": false
+            },
+            {
+              "id": 40,
+              "number": "5H",
+              "occupied": false
+            }
+          ]
         },
         {
-          "id": 3,
-          "number": "1C",
-          "occupied": false
+          "id": "schedule-mkzl9kgz0.28f0l6vdgz2",
+          "movieId": "movie-mkza4dug0.xmyolbzfqjs",
+          "startTime": "2026-01-31T12:59",
+          "endTime": "2026-01-31T14:39",
+          "seats": [
+            {
+              "id": 1,
+              "number": "1A",
+              "occupied": false
+            },
+            {
+              "id": 2,
+              "number": "1B",
+              "occupied": false
+            },
+            {
+              "id": 3,
+              "number": "1C",
+              "occupied": false
+            },
+            {
+              "id": 4,
+              "number": "1D",
+              "occupied": false
+            },
+            {
+              "id": 5,
+              "number": "1E",
+              "occupied": false
+            },
+            {
+              "id": 6,
+              "number": "1F",
+              "occupied": false
+            },
+            {
+              "id": 7,
+              "number": "1G",
+              "occupied": false
+            },
+            {
+              "id": 8,
+              "number": "1H",
+              "occupied": false
+            },
+            {
+              "id": 9,
+              "number": "2A",
+              "occupied": false
+            },
+            {
+              "id": 10,
+              "number": "2B",
+              "occupied": false
+            },
+            {
+              "id": 11,
+              "number": "2C",
+              "occupied": false
+            },
+            {
+              "id": 12,
+              "number": "2D",
+              "occupied": false
+            },
+            {
+              "id": 13,
+              "number": "2E",
+              "occupied": false
+            },
+            {
+              "id": 14,
+              "number": "2F",
+              "occupied": false
+            },
+            {
+              "id": 15,
+              "number": "2G",
+              "occupied": false
+            },
+            {
+              "id": 16,
+              "number": "2H",
+              "occupied": false
+            },
+            {
+              "id": 17,
+              "number": "3A",
+              "occupied": false
+            },
+            {
+              "id": 18,
+              "number": "3B",
+              "occupied": false
+            },
+            {
+              "id": 19,
+              "number": "3C",
+              "occupied": false
+            },
+            {
+              "id": 20,
+              "number": "3D",
+              "occupied": false
+            },
+            {
+              "id": 21,
+              "number": "3E",
+              "occupied": false
+            },
+            {
+              "id": 22,
+              "number": "3F",
+              "occupied": false
+            },
+            {
+              "id": 23,
+              "number": "3G",
+              "occupied": false
+            },
+            {
+              "id": 24,
+              "number": "3H",
+              "occupied": false
+            },
+            {
+              "id": 25,
+              "number": "4A",
+              "occupied": false
+            },
+            {
+              "id": 26,
+              "number": "4B",
+              "occupied": false
+            },
+            {
+              "id": 27,
+              "number": "4C",
+              "occupied": false
+            },
+            {
+              "id": 28,
+              "number": "4D",
+              "occupied": false
+            },
+            {
+              "id": 29,
+              "number": "4E",
+              "occupied": false
+            },
+            {
+              "id": 30,
+              "number": "4F",
+              "occupied": false
+            },
+            {
+              "id": 31,
+              "number": "4G",
+              "occupied": false
+            },
+            {
+              "id": 32,
+              "number": "4H",
+              "occupied": false
+            },
+            {
+              "id": 33,
+              "number": "5A",
+              "occupied": false
+            },
+            {
+              "id": 34,
+              "number": "5B",
+              "occupied": false
+            },
+            {
+              "id": 35,
+              "number": "5C",
+              "occupied": false
+            },
+            {
+              "id": 36,
+              "number": "5D",
+              "occupied": false
+            },
+            {
+              "id": 37,
+              "number": "5E",
+              "occupied": false
+            },
+            {
+              "id": 38,
+              "number": "5F",
+              "occupied": false
+            },
+            {
+              "id": 39,
+              "number": "5G",
+              "occupied": false
+            },
+            {
+              "id": 40,
+              "number": "5H",
+              "occupied": false
+            }
+          ]
         },
         {
-          "id": 4,
-          "number": "1D",
-          "occupied": false
+          "id": "schedule-mkzlalwf0.l43amcdxans",
+          "movieId": "movie-mkzc4vkz0.k9bp6nvvmxo",
+          "startTime": "2026-01-27T12:00",
+          "endTime": "2026-01-27T13:40",
+          "seats": [
+            {
+              "id": 1,
+              "number": "1A",
+              "occupied": false
+            },
+            {
+              "id": 2,
+              "number": "1B",
+              "occupied": false
+            },
+            {
+              "id": 3,
+              "number": "1C",
+              "occupied": false
+            },
+            {
+              "id": 4,
+              "number": "1D",
+              "occupied": false
+            },
+            {
+              "id": 5,
+              "number": "1E",
+              "occupied": false
+            },
+            {
+              "id": 6,
+              "number": "1F",
+              "occupied": false
+            },
+            {
+              "id": 7,
+              "number": "1G",
+              "occupied": false
+            },
+            {
+              "id": 8,
+              "number": "1H",
+              "occupied": false
+            },
+            {
+              "id": 9,
+              "number": "2A",
+              "occupied": false
+            },
+            {
+              "id": 10,
+              "number": "2B",
+              "occupied": false
+            },
+            {
+              "id": 11,
+              "number": "2C",
+              "occupied": false
+            },
+            {
+              "id": 12,
+              "number": "2D",
+              "occupied": false
+            },
+            {
+              "id": 13,
+              "number": "2E",
+              "occupied": false
+            },
+            {
+              "id": 14,
+              "number": "2F",
+              "occupied": false
+            },
+            {
+              "id": 15,
+              "number": "2G",
+              "occupied": false
+            },
+            {
+              "id": 16,
+              "number": "2H",
+              "occupied": false
+            },
+            {
+              "id": 17,
+              "number": "3A",
+              "occupied": false
+            },
+            {
+              "id": 18,
+              "number": "3B",
+              "occupied": false
+            },
+            {
+              "id": 19,
+              "number": "3C",
+              "occupied": false
+            },
+            {
+              "id": 20,
+              "number": "3D",
+              "occupied": false
+            },
+            {
+              "id": 21,
+              "number": "3E",
+              "occupied": false
+            },
+            {
+              "id": 22,
+              "number": "3F",
+              "occupied": false
+            },
+            {
+              "id": 23,
+              "number": "3G",
+              "occupied": false
+            },
+            {
+              "id": 24,
+              "number": "3H",
+              "occupied": false
+            },
+            {
+              "id": 25,
+              "number": "4A",
+              "occupied": false
+            },
+            {
+              "id": 26,
+              "number": "4B",
+              "occupied": false
+            },
+            {
+              "id": 27,
+              "number": "4C",
+              "occupied": false
+            },
+            {
+              "id": 28,
+              "number": "4D",
+              "occupied": false
+            },
+            {
+              "id": 29,
+              "number": "4E",
+              "occupied": false
+            },
+            {
+              "id": 30,
+              "number": "4F",
+              "occupied": false
+            },
+            {
+              "id": 31,
+              "number": "4G",
+              "occupied": false
+            },
+            {
+              "id": 32,
+              "number": "4H",
+              "occupied": false
+            },
+            {
+              "id": 33,
+              "number": "5A",
+              "occupied": false
+            },
+            {
+              "id": 34,
+              "number": "5B",
+              "occupied": false
+            },
+            {
+              "id": 35,
+              "number": "5C",
+              "occupied": false
+            },
+            {
+              "id": 36,
+              "number": "5D",
+              "occupied": false
+            },
+            {
+              "id": 37,
+              "number": "5E",
+              "occupied": false
+            },
+            {
+              "id": 38,
+              "number": "5F",
+              "occupied": false
+            },
+            {
+              "id": 39,
+              "number": "5G",
+              "occupied": false
+            },
+            {
+              "id": 40,
+              "number": "5H",
+              "occupied": false
+            }
+          ]
         },
         {
-          "id": 5,
-          "number": "1E",
-          "occupied": false
+          "id": "schedule-mkzlq5o10.hw21t9fu2tr",
+          "movieId": "movie-mkza4vdx0.4razb46ms26",
+          "startTime": "2026-01-29T00:00",
+          "endTime": "2026-01-29T01:40",
+          "seats": [
+            {
+              "id": 1,
+              "number": "1A",
+              "occupied": false
+            },
+            {
+              "id": 2,
+              "number": "1B",
+              "occupied": false
+            },
+            {
+              "id": 3,
+              "number": "1C",
+              "occupied": false
+            },
+            {
+              "id": 4,
+              "number": "1D",
+              "occupied": false
+            },
+            {
+              "id": 5,
+              "number": "1E",
+              "occupied": false
+            },
+            {
+              "id": 6,
+              "number": "1F",
+              "occupied": false
+            },
+            {
+              "id": 7,
+              "number": "1G",
+              "occupied": false
+            },
+            {
+              "id": 8,
+              "number": "1H",
+              "occupied": false
+            },
+            {
+              "id": 9,
+              "number": "2A",
+              "occupied": false
+            },
+            {
+              "id": 10,
+              "number": "2B",
+              "occupied": false
+            },
+            {
+              "id": 11,
+              "number": "2C",
+              "occupied": false
+            },
+            {
+              "id": 12,
+              "number": "2D",
+              "occupied": false
+            },
+            {
+              "id": 13,
+              "number": "2E",
+              "occupied": false
+            },
+            {
+              "id": 14,
+              "number": "2F",
+              "occupied": false
+            },
+            {
+              "id": 15,
+              "number": "2G",
+              "occupied": false
+            },
+            {
+              "id": 16,
+              "number": "2H",
+              "occupied": false
+            },
+            {
+              "id": 17,
+              "number": "3A",
+              "occupied": false
+            },
+            {
+              "id": 18,
+              "number": "3B",
+              "occupied": false
+            },
+            {
+              "id": 19,
+              "number": "3C",
+              "occupied": false
+            },
+            {
+              "id": 20,
+              "number": "3D",
+              "occupied": false
+            },
+            {
+              "id": 21,
+              "number": "3E",
+              "occupied": false
+            },
+            {
+              "id": 22,
+              "number": "3F",
+              "occupied": false
+            },
+            {
+              "id": 23,
+              "number": "3G",
+              "occupied": false
+            },
+            {
+              "id": 24,
+              "number": "3H",
+              "occupied": false
+            },
+            {
+              "id": 25,
+              "number": "4A",
+              "occupied": false
+            },
+            {
+              "id": 26,
+              "number": "4B",
+              "occupied": false
+            },
+            {
+              "id": 27,
+              "number": "4C",
+              "occupied": false
+            },
+            {
+              "id": 28,
+              "number": "4D",
+              "occupied": false
+            },
+            {
+              "id": 29,
+              "number": "4E",
+              "occupied": false
+            },
+            {
+              "id": 30,
+              "number": "4F",
+              "occupied": false
+            },
+            {
+              "id": 31,
+              "number": "4G",
+              "occupied": false
+            },
+            {
+              "id": 32,
+              "number": "4H",
+              "occupied": false
+            },
+            {
+              "id": 33,
+              "number": "5A",
+              "occupied": false
+            },
+            {
+              "id": 34,
+              "number": "5B",
+              "occupied": false
+            },
+            {
+              "id": 35,
+              "number": "5C",
+              "occupied": false
+            },
+            {
+              "id": 36,
+              "number": "5D",
+              "occupied": false
+            },
+            {
+              "id": 37,
+              "number": "5E",
+              "occupied": false
+            },
+            {
+              "id": 38,
+              "number": "5F",
+              "occupied": false
+            },
+            {
+              "id": 39,
+              "number": "5G",
+              "occupied": false
+            },
+            {
+              "id": 40,
+              "number": "5H",
+              "occupied": false
+            }
+          ]
         },
         {
-          "id": 6,
-          "number": "1F",
-          "occupied": false
-        },
-        {
-          "id": 7,
-          "number": "1G",
-          "occupied": false
-        },
-        {
-          "id": 8,
-          "number": "1H",
-          "occupied": false
-        },
-        {
-          "id": 9,
-          "number": "2A",
-          "occupied": false
-        },
-        {
-          "id": 10,
-          "number": "2B",
-          "occupied": false
-        },
-        {
-          "id": 11,
-          "number": "2C",
-          "occupied": false
-        },
-        {
-          "id": 12,
-          "number": "2D",
-          "occupied": false
-        },
-        {
-          "id": 13,
-          "number": "2E",
-          "occupied": false
-        },
-        {
-          "id": 14,
-          "number": "2F",
-          "occupied": false
-        },
-        {
-          "id": 15,
-          "number": "2G",
-          "occupied": false
-        },
-        {
-          "id": 16,
-          "number": "2H",
-          "occupied": false
-        },
-        {
-          "id": 17,
-          "number": "3A",
-          "occupied": false
-        },
-        {
-          "id": 18,
-          "number": "3B",
-          "occupied": false
-        },
-        {
-          "id": 19,
-          "number": "3C",
-          "occupied": false
-        },
-        {
-          "id": 20,
-          "number": "3D",
-          "occupied": false
-        },
-        {
-          "id": 21,
-          "number": "3E",
-          "occupied": false
-        },
-        {
-          "id": 22,
-          "number": "3F",
-          "occupied": false
-        },
-        {
-          "id": 23,
-          "number": "3G",
-          "occupied": false
-        },
-        {
-          "id": 24,
-          "number": "3H",
-          "occupied": false
-        },
-        {
-          "id": 25,
-          "number": "4A",
-          "occupied": false
-        },
-        {
-          "id": 26,
-          "number": "4B",
-          "occupied": false
-        },
-        {
-          "id": 27,
-          "number": "4C",
-          "occupied": false
-        },
-        {
-          "id": 28,
-          "number": "4D",
-          "occupied": false
-        },
-        {
-          "id": 29,
-          "number": "4E",
-          "occupied": false
-        },
-        {
-          "id": 30,
-          "number": "4F",
-          "occupied": false
-        },
-        {
-          "id": 31,
-          "number": "4G",
-          "occupied": false
-        },
-        {
-          "id": 32,
-          "number": "4H",
-          "occupied": false
-        },
-        {
-          "id": 33,
-          "number": "5A",
-          "occupied": false
-        },
-        {
-          "id": 34,
-          "number": "5B",
-          "occupied": false
-        },
-        {
-          "id": 35,
-          "number": "5C",
-          "occupied": false
-        },
-        {
-          "id": 36,
-          "number": "5D",
-          "occupied": false
-        },
-        {
-          "id": 37,
-          "number": "5E",
-          "occupied": false
-        },
-        {
-          "id": 38,
-          "number": "5F",
-          "occupied": false
-        },
-        {
-          "id": 39,
-          "number": "5G",
-          "occupied": false
-        },
-        {
-          "id": 40,
-          "number": "5H",
-          "occupied": false
+          "id": "schedule-mkzlqzys0.efxiger14i8",
+          "movieId": "movie-mkz762u40.y9vumky4png",
+          "startTime": "2026-01-26T01:00",
+          "endTime": "2026-01-26T02:40",
+          "seats": [
+            {
+              "id": 1,
+              "number": "1A",
+              "occupied": false
+            },
+            {
+              "id": 2,
+              "number": "1B",
+              "occupied": false
+            },
+            {
+              "id": 3,
+              "number": "1C",
+              "occupied": false
+            },
+            {
+              "id": 4,
+              "number": "1D",
+              "occupied": false
+            },
+            {
+              "id": 5,
+              "number": "1E",
+              "occupied": false
+            },
+            {
+              "id": 6,
+              "number": "1F",
+              "occupied": false
+            },
+            {
+              "id": 7,
+              "number": "1G",
+              "occupied": false
+            },
+            {
+              "id": 8,
+              "number": "1H",
+              "occupied": false
+            },
+            {
+              "id": 9,
+              "number": "2A",
+              "occupied": false
+            },
+            {
+              "id": 10,
+              "number": "2B",
+              "occupied": false
+            },
+            {
+              "id": 11,
+              "number": "2C",
+              "occupied": false
+            },
+            {
+              "id": 12,
+              "number": "2D",
+              "occupied": false
+            },
+            {
+              "id": 13,
+              "number": "2E",
+              "occupied": false
+            },
+            {
+              "id": 14,
+              "number": "2F",
+              "occupied": false
+            },
+            {
+              "id": 15,
+              "number": "2G",
+              "occupied": false
+            },
+            {
+              "id": 16,
+              "number": "2H",
+              "occupied": false
+            },
+            {
+              "id": 17,
+              "number": "3A",
+              "occupied": false
+            },
+            {
+              "id": 18,
+              "number": "3B",
+              "occupied": false
+            },
+            {
+              "id": 19,
+              "number": "3C",
+              "occupied": false
+            },
+            {
+              "id": 20,
+              "number": "3D",
+              "occupied": false
+            },
+            {
+              "id": 21,
+              "number": "3E",
+              "occupied": false
+            },
+            {
+              "id": 22,
+              "number": "3F",
+              "occupied": false
+            },
+            {
+              "id": 23,
+              "number": "3G",
+              "occupied": false
+            },
+            {
+              "id": 24,
+              "number": "3H",
+              "occupied": false
+            },
+            {
+              "id": 25,
+              "number": "4A",
+              "occupied": false
+            },
+            {
+              "id": 26,
+              "number": "4B",
+              "occupied": false
+            },
+            {
+              "id": 27,
+              "number": "4C",
+              "occupied": false
+            },
+            {
+              "id": 28,
+              "number": "4D",
+              "occupied": false
+            },
+            {
+              "id": 29,
+              "number": "4E",
+              "occupied": false
+            },
+            {
+              "id": 30,
+              "number": "4F",
+              "occupied": false
+            },
+            {
+              "id": 31,
+              "number": "4G",
+              "occupied": false
+            },
+            {
+              "id": 32,
+              "number": "4H",
+              "occupied": false
+            },
+            {
+              "id": 33,
+              "number": "5A",
+              "occupied": false
+            },
+            {
+              "id": 34,
+              "number": "5B",
+              "occupied": false
+            },
+            {
+              "id": 35,
+              "number": "5C",
+              "occupied": false
+            },
+            {
+              "id": 36,
+              "number": "5D",
+              "occupied": false
+            },
+            {
+              "id": 37,
+              "number": "5E",
+              "occupied": false
+            },
+            {
+              "id": 38,
+              "number": "5F",
+              "occupied": false
+            },
+            {
+              "id": 39,
+              "number": "5G",
+              "occupied": false
+            },
+            {
+              "id": 40,
+              "number": "5H",
+              "occupied": false
+            }
+          ]
         }
       ]
     },
     {
-      "id": "auditorium-mku7fmdh0.okjb3dkedgb",
-      "title": "Theater 1",
-      "schedules": []
+      "id": "auditorium-mkzeiqb30.nj6r5d74cy",
+      "title": "Theater 2",
+      "schedules": [
+        {
+          "id": "schedule-mkzgt1x80.un8d7m6yfz",
+          "movieId": "movie-mkz762u40.y9vumky4png",
+          "startTime": "2026-01-27T16:03",
+          "endTime": "2026-01-27T16:36",
+          "seats": [
+            {
+              "id": 1,
+              "number": "1A",
+              "occupied": false
+            },
+            {
+              "id": 2,
+              "number": "1B",
+              "occupied": false
+            },
+            {
+              "id": 3,
+              "number": "1C",
+              "occupied": false
+            },
+            {
+              "id": 4,
+              "number": "1D",
+              "occupied": false
+            },
+            {
+              "id": 5,
+              "number": "1E",
+              "occupied": false
+            },
+            {
+              "id": 6,
+              "number": "1F",
+              "occupied": false
+            },
+            {
+              "id": 7,
+              "number": "1G",
+              "occupied": false
+            },
+            {
+              "id": 8,
+              "number": "1H",
+              "occupied": false
+            },
+            {
+              "id": 9,
+              "number": "2A",
+              "occupied": false
+            },
+            {
+              "id": 10,
+              "number": "2B",
+              "occupied": false
+            },
+            {
+              "id": 11,
+              "number": "2C",
+              "occupied": false
+            },
+            {
+              "id": 12,
+              "number": "2D",
+              "occupied": false
+            },
+            {
+              "id": 13,
+              "number": "2E",
+              "occupied": false
+            },
+            {
+              "id": 14,
+              "number": "2F",
+              "occupied": false
+            },
+            {
+              "id": 15,
+              "number": "2G",
+              "occupied": false
+            },
+            {
+              "id": 16,
+              "number": "2H",
+              "occupied": false
+            },
+            {
+              "id": 17,
+              "number": "3A",
+              "occupied": false
+            },
+            {
+              "id": 18,
+              "number": "3B",
+              "occupied": false
+            },
+            {
+              "id": 19,
+              "number": "3C",
+              "occupied": false
+            },
+            {
+              "id": 20,
+              "number": "3D",
+              "occupied": false
+            },
+            {
+              "id": 21,
+              "number": "3E",
+              "occupied": false
+            },
+            {
+              "id": 22,
+              "number": "3F",
+              "occupied": false
+            },
+            {
+              "id": 23,
+              "number": "3G",
+              "occupied": false
+            },
+            {
+              "id": 24,
+              "number": "3H",
+              "occupied": false
+            },
+            {
+              "id": 25,
+              "number": "4A",
+              "occupied": false
+            },
+            {
+              "id": 26,
+              "number": "4B",
+              "occupied": false
+            },
+            {
+              "id": 27,
+              "number": "4C",
+              "occupied": false
+            },
+            {
+              "id": 28,
+              "number": "4D",
+              "occupied": false
+            },
+            {
+              "id": 29,
+              "number": "4E",
+              "occupied": false
+            },
+            {
+              "id": 30,
+              "number": "4F",
+              "occupied": false
+            },
+            {
+              "id": 31,
+              "number": "4G",
+              "occupied": false
+            },
+            {
+              "id": 32,
+              "number": "4H",
+              "occupied": false
+            },
+            {
+              "id": 33,
+              "number": "5A",
+              "occupied": false
+            },
+            {
+              "id": 34,
+              "number": "5B",
+              "occupied": false
+            },
+            {
+              "id": 35,
+              "number": "5C",
+              "occupied": false
+            },
+            {
+              "id": 36,
+              "number": "5D",
+              "occupied": false
+            },
+            {
+              "id": 37,
+              "number": "5E",
+              "occupied": false
+            },
+            {
+              "id": 38,
+              "number": "5F",
+              "occupied": false
+            },
+            {
+              "id": 39,
+              "number": "5G",
+              "occupied": false
+            },
+            {
+              "id": 40,
+              "number": "5H",
+              "occupied": false
+            }
+          ]
+        },
+        {
+          "id": "schedule-mkzhebmu0.aiscwe37s2k",
+          "movieId": "movie-mkza4kjq0.deqoxuu83mc",
+          "startTime": "2026-01-30T19:19",
+          "endTime": "2026-01-30T19:52",
+          "seats": [
+            {
+              "id": 1,
+              "number": "1A",
+              "occupied": false
+            },
+            {
+              "id": 2,
+              "number": "1B",
+              "occupied": false
+            },
+            {
+              "id": 3,
+              "number": "1C",
+              "occupied": false
+            },
+            {
+              "id": 4,
+              "number": "1D",
+              "occupied": false
+            },
+            {
+              "id": 5,
+              "number": "1E",
+              "occupied": false
+            },
+            {
+              "id": 6,
+              "number": "1F",
+              "occupied": false
+            },
+            {
+              "id": 7,
+              "number": "1G",
+              "occupied": false
+            },
+            {
+              "id": 8,
+              "number": "1H",
+              "occupied": false
+            },
+            {
+              "id": 9,
+              "number": "2A",
+              "occupied": false
+            },
+            {
+              "id": 10,
+              "number": "2B",
+              "occupied": false
+            },
+            {
+              "id": 11,
+              "number": "2C",
+              "occupied": false
+            },
+            {
+              "id": 12,
+              "number": "2D",
+              "occupied": false
+            },
+            {
+              "id": 13,
+              "number": "2E",
+              "occupied": false
+            },
+            {
+              "id": 14,
+              "number": "2F",
+              "occupied": false
+            },
+            {
+              "id": 15,
+              "number": "2G",
+              "occupied": false
+            },
+            {
+              "id": 16,
+              "number": "2H",
+              "occupied": false
+            },
+            {
+              "id": 17,
+              "number": "3A",
+              "occupied": false
+            },
+            {
+              "id": 18,
+              "number": "3B",
+              "occupied": false
+            },
+            {
+              "id": 19,
+              "number": "3C",
+              "occupied": false
+            },
+            {
+              "id": 20,
+              "number": "3D",
+              "occupied": false
+            },
+            {
+              "id": 21,
+              "number": "3E",
+              "occupied": false
+            },
+            {
+              "id": 22,
+              "number": "3F",
+              "occupied": false
+            },
+            {
+              "id": 23,
+              "number": "3G",
+              "occupied": false
+            },
+            {
+              "id": 24,
+              "number": "3H",
+              "occupied": false
+            },
+            {
+              "id": 25,
+              "number": "4A",
+              "occupied": false
+            },
+            {
+              "id": 26,
+              "number": "4B",
+              "occupied": false
+            },
+            {
+              "id": 27,
+              "number": "4C",
+              "occupied": false
+            },
+            {
+              "id": 28,
+              "number": "4D",
+              "occupied": false
+            },
+            {
+              "id": 29,
+              "number": "4E",
+              "occupied": false
+            },
+            {
+              "id": 30,
+              "number": "4F",
+              "occupied": false
+            },
+            {
+              "id": 31,
+              "number": "4G",
+              "occupied": false
+            },
+            {
+              "id": 32,
+              "number": "4H",
+              "occupied": false
+            },
+            {
+              "id": 33,
+              "number": "5A",
+              "occupied": false
+            },
+            {
+              "id": 34,
+              "number": "5B",
+              "occupied": false
+            },
+            {
+              "id": 35,
+              "number": "5C",
+              "occupied": false
+            },
+            {
+              "id": 36,
+              "number": "5D",
+              "occupied": false
+            },
+            {
+              "id": 37,
+              "number": "5E",
+              "occupied": false
+            },
+            {
+              "id": 38,
+              "number": "5F",
+              "occupied": false
+            },
+            {
+              "id": 39,
+              "number": "5G",
+              "occupied": false
+            },
+            {
+              "id": 40,
+              "number": "5H",
+              "occupied": false
+            }
+          ]
+        },
+        {
+          "id": "schedule-mkzhoz9q0.flhsy8hzh1c",
+          "movie": "movie-mktynx3w0.jt7l5vntwrh",
+          "startTime": "2026-01-30T14:27",
+          "endTime": "2026-01-30T16:07",
+          "seats": [
+            {
+              "id": 1,
+              "number": "1A",
+              "occupied": false
+            },
+            {
+              "id": 2,
+              "number": "1B",
+              "occupied": false
+            },
+            {
+              "id": 3,
+              "number": "1C",
+              "occupied": false
+            },
+            {
+              "id": 4,
+              "number": "1D",
+              "occupied": false
+            },
+            {
+              "id": 5,
+              "number": "1E",
+              "occupied": false
+            },
+            {
+              "id": 6,
+              "number": "1F",
+              "occupied": false
+            },
+            {
+              "id": 7,
+              "number": "1G",
+              "occupied": false
+            },
+            {
+              "id": 8,
+              "number": "1H",
+              "occupied": false
+            },
+            {
+              "id": 9,
+              "number": "2A",
+              "occupied": false
+            },
+            {
+              "id": 10,
+              "number": "2B",
+              "occupied": false
+            },
+            {
+              "id": 11,
+              "number": "2C",
+              "occupied": false
+            },
+            {
+              "id": 12,
+              "number": "2D",
+              "occupied": false
+            },
+            {
+              "id": 13,
+              "number": "2E",
+              "occupied": false
+            },
+            {
+              "id": 14,
+              "number": "2F",
+              "occupied": false
+            },
+            {
+              "id": 15,
+              "number": "2G",
+              "occupied": false
+            },
+            {
+              "id": 16,
+              "number": "2H",
+              "occupied": false
+            },
+            {
+              "id": 17,
+              "number": "3A",
+              "occupied": false
+            },
+            {
+              "id": 18,
+              "number": "3B",
+              "occupied": false
+            },
+            {
+              "id": 19,
+              "number": "3C",
+              "occupied": false
+            },
+            {
+              "id": 20,
+              "number": "3D",
+              "occupied": false
+            },
+            {
+              "id": 21,
+              "number": "3E",
+              "occupied": false
+            },
+            {
+              "id": 22,
+              "number": "3F",
+              "occupied": false
+            },
+            {
+              "id": 23,
+              "number": "3G",
+              "occupied": false
+            },
+            {
+              "id": 24,
+              "number": "3H",
+              "occupied": false
+            },
+            {
+              "id": 25,
+              "number": "4A",
+              "occupied": false
+            },
+            {
+              "id": 26,
+              "number": "4B",
+              "occupied": false
+            },
+            {
+              "id": 27,
+              "number": "4C",
+              "occupied": false
+            },
+            {
+              "id": 28,
+              "number": "4D",
+              "occupied": false
+            },
+            {
+              "id": 29,
+              "number": "4E",
+              "occupied": false
+            },
+            {
+              "id": 30,
+              "number": "4F",
+              "occupied": false
+            },
+            {
+              "id": 31,
+              "number": "4G",
+              "occupied": false
+            },
+            {
+              "id": 32,
+              "number": "4H",
+              "occupied": false
+            },
+            {
+              "id": 33,
+              "number": "5A",
+              "occupied": false
+            },
+            {
+              "id": 34,
+              "number": "5B",
+              "occupied": false
+            },
+            {
+              "id": 35,
+              "number": "5C",
+              "occupied": false
+            },
+            {
+              "id": 36,
+              "number": "5D",
+              "occupied": false
+            },
+            {
+              "id": 37,
+              "number": "5E",
+              "occupied": false
+            },
+            {
+              "id": 38,
+              "number": "5F",
+              "occupied": false
+            },
+            {
+              "id": 39,
+              "number": "5G",
+              "occupied": false
+            },
+            {
+              "id": 40,
+              "number": "5H",
+              "occupied": false
+            }
+          ]
+        },
+        {
+          "id": "schedule-mkzhuws20.xg55rewj5i",
+          "movie": "movie-mkza4vdx0.4razb46ms26",
+          "startTime": "2026-01-27T14:32",
+          "endTime": "2026-01-27T16:12",
+          "seats": [
+            {
+              "id": 1,
+              "number": "1A",
+              "occupied": false
+            },
+            {
+              "id": 2,
+              "number": "1B",
+              "occupied": false
+            },
+            {
+              "id": 3,
+              "number": "1C",
+              "occupied": false
+            },
+            {
+              "id": 4,
+              "number": "1D",
+              "occupied": false
+            },
+            {
+              "id": 5,
+              "number": "1E",
+              "occupied": false
+            },
+            {
+              "id": 6,
+              "number": "1F",
+              "occupied": false
+            },
+            {
+              "id": 7,
+              "number": "1G",
+              "occupied": false
+            },
+            {
+              "id": 8,
+              "number": "1H",
+              "occupied": false
+            },
+            {
+              "id": 9,
+              "number": "2A",
+              "occupied": false
+            },
+            {
+              "id": 10,
+              "number": "2B",
+              "occupied": false
+            },
+            {
+              "id": 11,
+              "number": "2C",
+              "occupied": false
+            },
+            {
+              "id": 12,
+              "number": "2D",
+              "occupied": false
+            },
+            {
+              "id": 13,
+              "number": "2E",
+              "occupied": false
+            },
+            {
+              "id": 14,
+              "number": "2F",
+              "occupied": false
+            },
+            {
+              "id": 15,
+              "number": "2G",
+              "occupied": false
+            },
+            {
+              "id": 16,
+              "number": "2H",
+              "occupied": false
+            },
+            {
+              "id": 17,
+              "number": "3A",
+              "occupied": false
+            },
+            {
+              "id": 18,
+              "number": "3B",
+              "occupied": false
+            },
+            {
+              "id": 19,
+              "number": "3C",
+              "occupied": false
+            },
+            {
+              "id": 20,
+              "number": "3D",
+              "occupied": false
+            },
+            {
+              "id": 21,
+              "number": "3E",
+              "occupied": false
+            },
+            {
+              "id": 22,
+              "number": "3F",
+              "occupied": false
+            },
+            {
+              "id": 23,
+              "number": "3G",
+              "occupied": false
+            },
+            {
+              "id": 24,
+              "number": "3H",
+              "occupied": false
+            },
+            {
+              "id": 25,
+              "number": "4A",
+              "occupied": false
+            },
+            {
+              "id": 26,
+              "number": "4B",
+              "occupied": false
+            },
+            {
+              "id": 27,
+              "number": "4C",
+              "occupied": false
+            },
+            {
+              "id": 28,
+              "number": "4D",
+              "occupied": false
+            },
+            {
+              "id": 29,
+              "number": "4E",
+              "occupied": false
+            },
+            {
+              "id": 30,
+              "number": "4F",
+              "occupied": false
+            },
+            {
+              "id": 31,
+              "number": "4G",
+              "occupied": false
+            },
+            {
+              "id": 32,
+              "number": "4H",
+              "occupied": false
+            },
+            {
+              "id": 33,
+              "number": "5A",
+              "occupied": false
+            },
+            {
+              "id": 34,
+              "number": "5B",
+              "occupied": false
+            },
+            {
+              "id": 35,
+              "number": "5C",
+              "occupied": false
+            },
+            {
+              "id": 36,
+              "number": "5D",
+              "occupied": false
+            },
+            {
+              "id": 37,
+              "number": "5E",
+              "occupied": false
+            },
+            {
+              "id": 38,
+              "number": "5F",
+              "occupied": false
+            },
+            {
+              "id": 39,
+              "number": "5G",
+              "occupied": false
+            },
+            {
+              "id": 40,
+              "number": "5H",
+              "occupied": false
+            }
+          ]
+        },
+        {
+          "id": "schedule-mkzhystn0.o0zyzg6gts",
+          "movie": "movie-mktynx3w0.jt7l5vntwrh",
+          "startTime": "2026-01-30T14:35",
+          "endTime": "2026-01-30T16:15",
+          "seats": [
+            {
+              "id": 1,
+              "number": "1A",
+              "occupied": false
+            },
+            {
+              "id": 2,
+              "number": "1B",
+              "occupied": false
+            },
+            {
+              "id": 3,
+              "number": "1C",
+              "occupied": false
+            },
+            {
+              "id": 4,
+              "number": "1D",
+              "occupied": false
+            },
+            {
+              "id": 5,
+              "number": "1E",
+              "occupied": false
+            },
+            {
+              "id": 6,
+              "number": "1F",
+              "occupied": false
+            },
+            {
+              "id": 7,
+              "number": "1G",
+              "occupied": false
+            },
+            {
+              "id": 8,
+              "number": "1H",
+              "occupied": false
+            },
+            {
+              "id": 9,
+              "number": "2A",
+              "occupied": false
+            },
+            {
+              "id": 10,
+              "number": "2B",
+              "occupied": false
+            },
+            {
+              "id": 11,
+              "number": "2C",
+              "occupied": false
+            },
+            {
+              "id": 12,
+              "number": "2D",
+              "occupied": false
+            },
+            {
+              "id": 13,
+              "number": "2E",
+              "occupied": false
+            },
+            {
+              "id": 14,
+              "number": "2F",
+              "occupied": false
+            },
+            {
+              "id": 15,
+              "number": "2G",
+              "occupied": false
+            },
+            {
+              "id": 16,
+              "number": "2H",
+              "occupied": false
+            },
+            {
+              "id": 17,
+              "number": "3A",
+              "occupied": false
+            },
+            {
+              "id": 18,
+              "number": "3B",
+              "occupied": false
+            },
+            {
+              "id": 19,
+              "number": "3C",
+              "occupied": false
+            },
+            {
+              "id": 20,
+              "number": "3D",
+              "occupied": false
+            },
+            {
+              "id": 21,
+              "number": "3E",
+              "occupied": false
+            },
+            {
+              "id": 22,
+              "number": "3F",
+              "occupied": false
+            },
+            {
+              "id": 23,
+              "number": "3G",
+              "occupied": false
+            },
+            {
+              "id": 24,
+              "number": "3H",
+              "occupied": false
+            },
+            {
+              "id": 25,
+              "number": "4A",
+              "occupied": false
+            },
+            {
+              "id": 26,
+              "number": "4B",
+              "occupied": false
+            },
+            {
+              "id": 27,
+              "number": "4C",
+              "occupied": false
+            },
+            {
+              "id": 28,
+              "number": "4D",
+              "occupied": false
+            },
+            {
+              "id": 29,
+              "number": "4E",
+              "occupied": false
+            },
+            {
+              "id": 30,
+              "number": "4F",
+              "occupied": false
+            },
+            {
+              "id": 31,
+              "number": "4G",
+              "occupied": false
+            },
+            {
+              "id": 32,
+              "number": "4H",
+              "occupied": false
+            },
+            {
+              "id": 33,
+              "number": "5A",
+              "occupied": false
+            },
+            {
+              "id": 34,
+              "number": "5B",
+              "occupied": false
+            },
+            {
+              "id": 35,
+              "number": "5C",
+              "occupied": false
+            },
+            {
+              "id": 36,
+              "number": "5D",
+              "occupied": false
+            },
+            {
+              "id": 37,
+              "number": "5E",
+              "occupied": false
+            },
+            {
+              "id": 38,
+              "number": "5F",
+              "occupied": false
+            },
+            {
+              "id": 39,
+              "number": "5G",
+              "occupied": false
+            },
+            {
+              "id": 40,
+              "number": "5H",
+              "occupied": false
+            }
+          ]
+        },
+        {
+          "id": "schedule-mkzhzmrj0.dyyl1g8usfi",
+          "movie": "movie-mkza4kjq0.deqoxuu83mc",
+          "startTime": "2026-01-26T17:40",
+          "endTime": "2026-01-26T19:20",
+          "seats": [
+            {
+              "id": 1,
+              "number": "1A",
+              "occupied": false
+            },
+            {
+              "id": 2,
+              "number": "1B",
+              "occupied": false
+            },
+            {
+              "id": 3,
+              "number": "1C",
+              "occupied": false
+            },
+            {
+              "id": 4,
+              "number": "1D",
+              "occupied": false
+            },
+            {
+              "id": 5,
+              "number": "1E",
+              "occupied": false
+            },
+            {
+              "id": 6,
+              "number": "1F",
+              "occupied": false
+            },
+            {
+              "id": 7,
+              "number": "1G",
+              "occupied": false
+            },
+            {
+              "id": 8,
+              "number": "1H",
+              "occupied": false
+            },
+            {
+              "id": 9,
+              "number": "2A",
+              "occupied": false
+            },
+            {
+              "id": 10,
+              "number": "2B",
+              "occupied": false
+            },
+            {
+              "id": 11,
+              "number": "2C",
+              "occupied": false
+            },
+            {
+              "id": 12,
+              "number": "2D",
+              "occupied": false
+            },
+            {
+              "id": 13,
+              "number": "2E",
+              "occupied": false
+            },
+            {
+              "id": 14,
+              "number": "2F",
+              "occupied": false
+            },
+            {
+              "id": 15,
+              "number": "2G",
+              "occupied": false
+            },
+            {
+              "id": 16,
+              "number": "2H",
+              "occupied": false
+            },
+            {
+              "id": 17,
+              "number": "3A",
+              "occupied": false
+            },
+            {
+              "id": 18,
+              "number": "3B",
+              "occupied": false
+            },
+            {
+              "id": 19,
+              "number": "3C",
+              "occupied": false
+            },
+            {
+              "id": 20,
+              "number": "3D",
+              "occupied": false
+            },
+            {
+              "id": 21,
+              "number": "3E",
+              "occupied": false
+            },
+            {
+              "id": 22,
+              "number": "3F",
+              "occupied": false
+            },
+            {
+              "id": 23,
+              "number": "3G",
+              "occupied": false
+            },
+            {
+              "id": 24,
+              "number": "3H",
+              "occupied": false
+            },
+            {
+              "id": 25,
+              "number": "4A",
+              "occupied": false
+            },
+            {
+              "id": 26,
+              "number": "4B",
+              "occupied": false
+            },
+            {
+              "id": 27,
+              "number": "4C",
+              "occupied": false
+            },
+            {
+              "id": 28,
+              "number": "4D",
+              "occupied": false
+            },
+            {
+              "id": 29,
+              "number": "4E",
+              "occupied": false
+            },
+            {
+              "id": 30,
+              "number": "4F",
+              "occupied": false
+            },
+            {
+              "id": 31,
+              "number": "4G",
+              "occupied": false
+            },
+            {
+              "id": 32,
+              "number": "4H",
+              "occupied": false
+            },
+            {
+              "id": 33,
+              "number": "5A",
+              "occupied": false
+            },
+            {
+              "id": 34,
+              "number": "5B",
+              "occupied": false
+            },
+            {
+              "id": 35,
+              "number": "5C",
+              "occupied": false
+            },
+            {
+              "id": 36,
+              "number": "5D",
+              "occupied": false
+            },
+            {
+              "id": 37,
+              "number": "5E",
+              "occupied": false
+            },
+            {
+              "id": 38,
+              "number": "5F",
+              "occupied": false
+            },
+            {
+              "id": 39,
+              "number": "5G",
+              "occupied": false
+            },
+            {
+              "id": 40,
+              "number": "5H",
+              "occupied": false
+            }
+          ]
+        }
+      ]
     }
   ]
 }
