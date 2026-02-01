@@ -50,7 +50,6 @@ const ManageAuditorium = ({ onButtonClick }) => {
   const handleEditAuditorium = async (updatedAuditorium) => {
     await fetchPatch(`${auditoriumsApiUrl}/${updatedAuditorium.id}`, {
       title: updatedAuditorium.title,
-      seats: updatedAuditorium.seats,
     });
     setSelectMode(modeViewAuditoriums);
   };

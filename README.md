@@ -1,5 +1,17 @@
 # Diary
 
+## 2026-02-01
+
+- Updated error messages for invalid title, price, and movie length in MovieForm and AuditoriumForm.
+- Enhanced BookMovieForm to include email validation.
+- Introduced a new isValidEmail function for email validation.
+- Modified BookingData model to include movieId and bookedSeats.
+- Updated ManageAuditorium to remove unnecessary seats property in the edit function.
+- Improved BookMovieSeat component to handle booking data and manage selected seats.
+- Added CSS styles for disabled booking button state.
+- Created new CSS file for BookMovieForm styling.
+- Updated variables to include bookingsApiUrl for booking requests.
+
 ## 2026-01-29 - 2026-01-31
 
 - Removed unused seat handling logic from AuditoriumForm.

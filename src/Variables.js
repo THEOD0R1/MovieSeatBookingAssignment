@@ -1,5 +1,7 @@
 export const moviesApiUrl = `${import.meta.env.VITE_API_URL}/movies`;
 export const auditoriumsApiUrl = `${import.meta.env.VITE_API_URL}/auditoriums`;
+export const bookingsApiUrl = `${import.meta.env.VITE_API_URL}/bookings`;
+
 //Admin modes
 export const adminModeSelect = "selectMode";
 //Movie management modes
@@ -38,7 +40,7 @@ export const auditoriumSeats = [
   { id: 17, number: "3A", occupied: false },
   { id: 18, number: "3B", occupied: false },
   { id: 19, number: "3C", occupied: false },
-  { id: 20, number: "3D", occupied: false },
+  { id: 20, number: "3D", occupied: true },
   { id: 21, number: "3E", occupied: false },
   { id: 22, number: "3F", occupied: false },
   { id: 23, number: "3G", occupied: false },
@@ -50,7 +52,7 @@ export const auditoriumSeats = [
   { id: 28, number: "4D", occupied: false },
   { id: 29, number: "4E", occupied: false },
   { id: 30, number: "4F", occupied: false },
-  { id: 31, number: "4G", occupied: false },
+  { id: 31, number: "4G", occupied: true },
   { id: 32, number: "4H", occupied: false },
 
   { id: 33, number: "5A", occupied: false },

@@ -18,7 +18,7 @@ const AuditoriumForm = ({
 
     const validTitle = isValidMovieName(auditorium.title);
 
-    if (!validTitle) error = " In valid title";
+    if (!validTitle) error = " Invalid title";
     else error = "";
 
     setErrorMessage(error);

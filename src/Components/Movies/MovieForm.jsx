@@ -30,13 +30,13 @@ const MovieForm = ({
     const validPrice = isValidPrice(+movie?.price?.trim());
     const validMovieLength = isValidPrice(+movie?.movieLength?.trim());
 
-    if (!validName) error.title = " In valid title";
+    if (!validName) error.title = " Invalid title";
     else error.title = "";
 
-    if (!validPrice) error.price = " In valid price";
+    if (!validPrice) error.price = " Invalid price";
     else error.price = "";
 
-    if (!validMovieLength) error.movieLength = " In valid movie length";
+    if (!validMovieLength) error.movieLength = " Invalid movie length";
     else error.movieLength = "";
 
     setErrorMessage(error);
@@ -60,7 +60,7 @@ const MovieForm = ({
           type="text"
           placeholder="Batman Begins"
         />
-        <label htmlFor="movie-price-form">
+        <label htmlFor="movie-movie-length-form">
           Length (min)*
           <span className="error-message">{errorMessage.movieLength}</span>
         </label>
@@ -68,7 +68,7 @@ const MovieForm = ({
           className="movie-form-input"
           value={movie.movieLength}
           onChange={(e) => setMovie({ ...movie, movieLength: e.target.value })}
-          id="movie-price-form"
+          id="movie-movie-length-form"
           type="text"
           placeholder="120"
         />
