@@ -121,18 +121,12 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ### Model-Driven Approach
 
-We use `Models/` (Auditorium.js, Movie.js, Schedule.js, BookingData.js) to represent data structures.
-
-**Benefits:**
-
-- **Clarity:** It's clear what properties each entity has.
-- **Consistency:** All components use the same data source for their objects.
-- **Easier Refactoring:** If a data structure needs to change, it only changes in one place.
+I used `Models/` (Auditorium.js, Movie.js, Schedule.js, BookingData.js) to represent data structures.
 
 ### Utility Functions
 
 - `Functions/Date/` - Date and time-related utilities (formatting, time calculations)
-- `Functions/Fetch/` - Abstracted fetch operations (`fetchPost`, `fetchPatch`, `fetchDelete`)
+- `Functions/Fetch/` - Fetch operations (`fetchPost`, `fetchPatch`, `fetchDelete`)
 - `Generators/` - ID generator for creating unique IDs
 - `Validations/` - User input validation functions
 
@@ -145,19 +139,3 @@ We use `Models/` (Auditorium.js, Movie.js, Schedule.js, BookingData.js) to repre
 ### Custom Hooks
 
 `Hooks/useFetchDataOnLoad.js` abstracts the logic for fetching data when a component mounts.
-
-**Rationale:**
-
-- **Reusability:** Multiple components can fetch data in the same way without duplication.
-- **Separation:** Data-fetching logic is separated from rendering logic.
-
----
-
-## Summary
-
-This stack was chosen to:
-
-1. **Minimize Complexity** - Simple, well-known tools instead of over-engineered setup
-2. **Maximize Learning** - Focus on frontend fundamentals and React patterns
-3. **Enable Rapid Development** - Vite and json-server allow quick prototyping
-4. **Follow Industry Standards** - React and Vite are industry standards for modern web development
